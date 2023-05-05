@@ -22,3 +22,6 @@ The concepts in the object are defined by the Sec and are keys that can be found
 
 ## Converting a Sec file
 To convert a Sec file it has to be put in the importFiles folder and the ticker.txt has to be present too. Then the Jupyter notebook has to be updated with the new filename and the output directory should be set(the filename for example). The Sec files are zipped and large and interdepended. That causes longer runtimes of the converter(depending on your cpu minutes to hours). After the Jupyter Notebook has finished the result directory/ies can be zipped with this command in the exportFiles folder: "zip -r9 export.zip *" to get a "export.zip" file.
+
+## Articles
+* [Using a Jupyter Notebook with Pandas for data conversion](https://angular2guy.wordpress.com/2023/05/05/using-a-jupyter-notebook-with-pandas-for-data-conversion/)
