@@ -20,6 +20,12 @@ The third are the value objects that are contained in the arrays.
 
 The concepts in the object are defined by the Sec and are keys that can be found in many reports and can be analysed.
 
+### Format structure
+`{"quarter": "Q1", "country": "Italy", "data": {{"cf": [{"value": 0, "concept": "A", "unit": "USD", "label": "B", "info": "C"}], "bs": [{"value": 0, "concept": "A", "unit": "USD", "label": "B", "info": "C"}], "ic": [{"value": 0, "concept": "A", "unit": "USD", "label": "B", "info": "C"}]}}, "year": 0, "name": "B", "startDate": "2009-12-31", "endDate": "2010-12-30", "symbol": "GM", "city": "York"}`
+
+Example Json:
+`{"year": 2023, "data": {"cf": [{"value": -1834000000, "concept": "NetCashProvidedByUsedInFinancingActivities", "unit": "USD", "label": "Amount of cash inflow (outflow) from financing … Amount of cash inflow (outflow) from financing …", "info": "Net cash used in financing activities"}]], "ic":[{"value": 1000000, "concept": "IncreaseDecreaseInDueFromRelatedParties", "unit": "USD", "label": "The increase (decrease) during the reporting pe… The increase (decrease) during the reporting pe…", "info": "Receivables from related parties"}], "bs": [{"value": 2779000000, "concept": "AccountsPayableCurrent", "unit": "USD", "label": "Carrying value as of the balance sheet date of … Carrying value as of the balance sheet date of …", "info": "Accounts payable"}}, "quarter": "Q2", "city": "SANTA CLARA", "startDate": "2023-06-30", "name": "ADVANCED MICRO DEVICES INC", "endDate": "2023-09-29", "country": "US", "symbol": "AMD"}`
+
 ## Converting a Sec file
 To convert a Sec file it has to be put in the importFiles folder and the ticker.txt has to be present too. Then the Jupyter notebook has to be updated with the new filename and the output directory should be set(the filename for example). The Sec files are zipped and large and interdepended. That causes longer runtimes of the converter(depending on your cpu minutes to hours). After the Jupyter Notebook has finished the result directory/ies can be zipped with this command in the exportFiles folder: "zip -r9 export.zip *" to get a "export.zip" file.
 
